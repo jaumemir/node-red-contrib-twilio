@@ -11,7 +11,6 @@ module.exports = function(RED) {
         
         RED.httpAdmin.get(n.url, function(req,res) { 
         
-           
             var resp = new twilio.TwimlResponse();
 
             resp.say('Welcome to Twilio!');
