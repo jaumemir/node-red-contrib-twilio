@@ -6,11 +6,7 @@ _internals.say = function (payload, creds, cb) {
     
     var resp = new twilio.TwimlResponse();
 
-    resp.say('Welcome to Twilio!');
-    resp.say('Please let us know if we can help during your development.', {
-        voice:'woman',
-        language:'en-gb'
-    });
+    resp.say(payload.text);
 
     cb(null, resp.toString());  
     
@@ -32,7 +28,7 @@ module.exports = function(RED) {
             
             var payload = typeof msg.payload === 'object' ? msg.payload : {};
         
-            var attrs = ['to', 'from', 'url'];
+            var attrs = ['text'];
             for (var attr of attrs) {
                 if (n[attr]) {
                     payload[attr] = n[attr];     
