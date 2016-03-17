@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-twilio",
-  "version": "0.0.3",
+  "version": "0.0.0",
   "description": "NodeRED Twilio Nodes",
   "main": "index.js",
   "scripts": {
@@ -30,7 +30,9 @@
   },
   "node-red": {
     "nodes": {
-      "template-2": "template-2.js"
+      "twilio-connection": "twilio-connection.js",
+      "twilio-call": "twilio-call.js",
+      "twilio-say": "twilio-say.js"
     }
   }
 }

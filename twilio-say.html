@@ -5,7 +5,7 @@
 
 <!-- First, the content of the edit dialog is defined.                       -->
 
-<script type="text/x-red" data-template-name="twilio-call">
+<script type="text/x-red" data-template-name="twilio-say">
 
    <div class="form-row">
         <label for="node-input-creds"> Credentials</label>
@@ -39,7 +39,7 @@
 
 
 <!-- Next, some simple help text is provided for the node.                   -->
-<script type="text/x-red" data-help-name="twilio-call">
+<script type="text/x-red" data-help-name="twilio-say">
 
 
 </script>
@@ -47,23 +47,23 @@
 <!-- Finally, the node type is registered along with all of its properties   -->
 <!-- The example below shows a small subset of the properties that can be set-->
 <script type="text/javascript">
-    RED.nodes.registerType('twilio-call',{
+    RED.nodes.registerType('twilio-say',{
         category: 'Twilio',
         defaults: {    
             creds: {value:"", type:"twilio-connection"},
             name: {value:""},
-            to: {value:""},
+            url: {value:""},
             from: {value:""},
             url: {value:""}
         },
-        inputs:1,               // set the number of inputs - only 0 or 1
-        outputs:1,              // set the number of outputs - 0 to n
+        inputs:0,               // set the number of inputs - only 0 or 1
+        outputs:0,              // set the number of outputs - 0 to n
         icon: "twilio.png",     // saved in  icons/myicon.png
         color: "#FF595F", 
         label: function() {
-            return this.name || "Call";
+            return this.name || "Say";
         },
-        paletteLabel: "Call"
+        paletteLabel: "Say"
         
     });
 </script>
