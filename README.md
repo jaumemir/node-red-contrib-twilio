@@ -1,6 +1,6 @@
 # Twilio for NodeRED
 
-[![RedConnect Approved](https://img.shields.io/badge/RedConnect-Approved-brightgreen.svg?style=flat)](https://www.redconnect.io/addons/)
+[![RedConnect Approved](https://img.shields.io/badge/RedConnect-Approved-brightgreen.svg?style=flat)](https://www.redconnect.io/addons) [![Gitter](https://img.shields.io/gitter/room/badges/shields.svg)](https://gitter.im/redconnect-io/redconnect)
 
 An set of nodes that map the Twilio [NPM Module](https://twilio.github.io/twilio-node/).
 
