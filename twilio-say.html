@@ -17,6 +17,16 @@
         <input type="text" id="node-input-text" placeholder="Text to say">
     </div>
     
+   <div class="form-row">
+        <label for="node-input-text"><i class="fa fa-tag"></i> Voice</label>
+        <input type="text" id="node-input-voice" placeholder="Voice code to use">
+    </div>
+    
+   <div class="form-row">
+        <label for="node-input-text"><i class="fa fa-tag"></i> Language</label>
+        <input type="text" id="node-input-language" placeholder="Language to use">
+    </div>
+    
     <!-- By convention, most nodes have a 'name' property. The following div -->
     <!-- provides the necessary field. Should always be the last option      -->
     <div class="form-row">
@@ -42,7 +52,9 @@
         defaults: {    
             creds: {value:"", type:"twilio-connection"},
             name: {value:""},
-            text: {value:""}
+            text: {value:""},
+            voice: {value:"alice"},
+            language: {value:"es-ES"}
             
         },
         inputs:1,               // set the number of inputs - only 0 or 1
