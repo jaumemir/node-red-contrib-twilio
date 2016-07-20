@@ -32,7 +32,8 @@
     "nodes": {
       "twilio-connection": "twilio-connection.js",
       "twilio-call": "twilio-call.js",
-      "twilio-say": "twilio-say.js"
+      "twilio-say": "twilio-say.js",
+      "twilio-record" : "twilio-record.js"
     }
   }
 }
