@@ -6,7 +6,7 @@ _internals.say = function (payload, creds, cb) {
     
     var resp = new twilio.TwimlResponse();
 
-    resp.say(payload.text);
+    resp.say({ 'voice' : payload.voice }, { 'language' : payload.language }, payload.text);
 
     cb(null, resp.toString());  
     
