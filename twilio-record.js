@@ -35,7 +35,7 @@ module.exports = function(RED) {
                 }
             }
             
-            _internals.say(payload, creds, function(err, result){
+            _internals.record(payload, creds, function(err, result){
         
                 msg.payload = result;
                 node.log(JSON.stringify(err));
