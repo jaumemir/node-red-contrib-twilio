@@ -28,7 +28,7 @@ module.exports = function(RED) {
             
             var payload = typeof msg.payload === 'object' ? msg.payload : {};
         
-            var attrs = ['text'];
+            var attrs = ['text','voice','language'];
             for (var attr of attrs) {
                 if (n[attr]) {
                     payload[attr] = n[attr];     
